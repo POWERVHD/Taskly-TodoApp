@@ -16,6 +16,17 @@
 
       <form method="post">
         {% csrf_token %}
+
+        {% if messages %}
+          <script>
+              window.onload = function() {
+                  {% for message in messages %}
+                      alert("{{ message }}");
+                  {% endfor %}
+              };
+          </script>
+        {% endif %}
+
         <div class="heading">
           Login
         </div>

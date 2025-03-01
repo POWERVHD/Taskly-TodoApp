@@ -13,25 +13,24 @@
 </head>
 
 <body>
-
-    {% if messages %}
-        <script>
-            window.onload = function() {
-                {% for message in messages %}
-                    alert("{{ message }}");
-                {% endfor %}
-                    
-                {% if messages.success %}
-                    window.location.href = "/login";
-                {% endif %}
-            };
-        </script>
-    {% endif %}
-
     <div class="signup-login">
         <div class="signup-box">
             <form method="post">
                 {% csrf_token %}
+
+                {% if messages %}
+                    <script>
+                        window.onload = function() {
+                            {% for message in messages %}
+                                alert("{{ message }}");
+                            {% endfor %}
+                                
+                            {% if messages.success %}
+                                window.location.href = "/login";
+                            {% endif %}
+                        };
+                    </script>
+                {% endif %}
                 <div class="heading">
                     SignUp
                 </div>
