@@ -5,6 +5,8 @@ from django.contrib.auth import authenticate, login, logout
 from todo import models
 from todo.models import TODOO
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
 
 
 @login_required(login_url='/loginn')
@@ -13,14 +15,20 @@ def home(request):
 
 
 def signup(request):
+
     if request.method == 'POST':
         fnm=request.POST.get('fnm')
         emailid=request.POST.get('emailid')
         pwd=request.POST.get('pwd')
-        print(fnm,emailid,pwd)
-        my_user=User.objects.create_user(fnm,emailid,pwd)
-        my_user.save()
-        return redirect('/loginn')
+
+        if User.objects.filter(username=fnm).exists():
+            messages.error(request, 'Username is already taken')
+        else:
+            my_user=User.objects.create_user(username=fnm, email=emailid, password=pwd)
+            my_user.save()
+            messages.success(request, "Account created successfully! Please log in.")
+            print("Message added: Account created successfully!")
+            return redirect('/loginn')
     
     return render(request, 'signup.html')
         
