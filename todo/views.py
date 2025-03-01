@@ -9,7 +9,7 @@ from django.contrib import messages
 
 @login_required(login_url='/loginn')
 def home(request):
-    return render(request, 'signup.html')
+    return render(request, 'loginn.html')
 
 
 def signup(request):

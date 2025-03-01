@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8477ff, #a881ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Todo Container */
+.signup-box {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-height: 500px;  /* Adjusted height */
+    overflow-y: auto;  /* Enable scrolling */
+}
+
+/* Custom Scrollbar */
+.signup-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.signup-box::-webkit-scrollbar-thumb {
+    background-color: #8477ff;
+    border-radius: 6px;
+}
+
+.signup-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* User Greeting */
+.user-greeting {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Header Section */
+.heads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Logout button */
+.sign {
+    color: #8477ff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.sign:hover {
+    color: #6a5acd;
+}
+
+/* Todo Input */
+.todo-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Add Task Button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8477ff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #6a5acd;
+}
+
+/* Todo Items */
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.Todo p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Todo Colors */
+.todo-green {
+    background: #c8f7c5;
+    border-left: 5px solid #2ecc71;
+}
+
+.todo-red {
+    background: #f7c5c5;
+    border-left: 5px solid #e74c3c;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Icons */
+.Todo a {
+    color: #8477ff;
+    font-size: 18px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.Todo a:hover {
+    color: #6a5acd;
+}

@@ -1,0 +1,139 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8477ff, #a881ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Signup container */
+.signup-box {
+    background: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/* Signup heading */
+.heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    
+}
+
+/* Underline below heading */
+.line {
+    width: 50px;
+    height: 3px;
+    background: #8477ff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Input field labels */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.inp {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+/* Signup button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8477ff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 0
+}
+
+/* Signup button hover effect */
+.submit-button:hover {
+    background-color: #6a5acd;
+}
+
+
+
+/* Already have an account text */
+.field p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Login link */
+.anc {
+    color: #8477ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Login link hover effect */
+.anc:hover {
+    text-decoration: underline;
+}
+
+
+.heading::after {
+    content: none; /* Remove any pseudo-element */
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    margin-left: 20px; /* Adjust left margin for better spacing */
+    margin-bottom: 10px;
+}
+
+b {
+    text-align: left;
+    margin-bottom: 5px; /* Add space between label and input */
+}
+
+.login-link {
+    display: flex;
+    justify-content: center;  /* Center align */
+    align-items: center;  /* Align items vertically */
+    gap: 8px;  /* Space between text and link */
+    flex-wrap: nowrap;
+}
+
+.anc {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7b5dfb;
+    text-decoration: none;
+    margin-left: 5px; /* Small space for better readability */
+}
+
+.anc:hover {
+    color: #5a3fcf;
+}
+
+

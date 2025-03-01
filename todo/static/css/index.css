@@ -14,9 +14,9 @@ body {
     color: #fff;
     font-family: Poppins;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   
 
   }
@@ -26,7 +26,7 @@ body {
     height: 650px;
     width: 520px;
     border-radius: 25px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(2, 82, 231, 0.952);
 
   }
   .heading{
@@ -140,6 +140,10 @@ body {
   color: #c5aeff;
   text-decoration: line-through;
 }
+
+
+
+
 
 /* Changes Made After Working  
 on the project
