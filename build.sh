@@ -17,6 +17,6 @@ python manage.py collectstatic --noinput
 echo "Applying migrations..."
 python manage.py makemigrations
 python manage.py migrate
-
+python clear_sessions.py
 
 echo "Build completed successfully!"
