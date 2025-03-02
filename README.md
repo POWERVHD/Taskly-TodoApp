@@ -7,7 +7,6 @@ Taskly is a simple and efficient task management web application that helps user
 
 ✅ User Authentication (Signup & Login)\
 ✅ Add, Edit, and Delete Tasks\
-✅ Mark Tasks as Completed\
 ✅ Responsive UI with Smooth Design\
 ✅ Secure CSRF-Protected Forms\
 ✅ Persistent Task Storage in Database
