@@ -11,13 +11,13 @@ set -e
 echo "Installing dependencies..."
 pip install -r requirements.txt
 
+echo "Collecting static files..."
+python manage.py collectstatic --noinput
+
 echo "Applying migrations..."
 python clear_sessions.py  # Run this before migrations to clear sessions
 python manage.py makemigrations
 python manage.py migrate
-
-#echo "Collecting static files..."
-#python manage.py collectstatic --noinput
 
 
 echo "Build completed successfully!"
