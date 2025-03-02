@@ -2,6 +2,8 @@
 ![image](https://github.com/user-attachments/assets/25a7430c-736b-4c65-91be-77ba5bf3ae01)
 
 Taskly is a simple and efficient task management web application that helps users organize and track their daily tasks. With a clean user interface and intuitive functionality, Taskly makes managing to-do lists seamless and productive.
+[![🚀 Live Site](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://taskly-deployment.onrender.com)
+
 
 ## Features
 
