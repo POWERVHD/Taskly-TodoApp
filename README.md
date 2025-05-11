@@ -17,7 +17,7 @@ Taskly is a simple and efficient task management web application that helps user
 
 - **Frontend:** HTML, CSS 
 - **Backend:** Django (Python)
-- **Database:** SQLite (default), PostgreSQL (optional)
+- **Database:** PostgreSQL (optional)
 - **JavaScript:** Dynamic interactions
 - **Version Control:** Git & GitHub
 
